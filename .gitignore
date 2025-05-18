@@ -1,0 +1,14 @@
+# Entornos virtuales
+.venv/
+__pycache__/
+*.pyc
+
+# Configuración
+.env
+.python-version
+chromadb/
+langchain.db
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

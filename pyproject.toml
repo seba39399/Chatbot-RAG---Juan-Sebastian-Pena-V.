@@ -1,0 +1,19 @@
+[project]
+name = "chatbot-rag"
+version = "0.1.0"
+description = "Chatbot RAG con Langchain, ChromaDB y Ollama"
+dependencies = [
+    "langchain",
+    "chromadb",
+    "streamlit",
+    "langchain-community",
+    "langchain-core",
+    "langchainhub",
+    "langsmith",
+    "PyPDF2",
+    "python-dotenv",
+    "tqdm"
+]
+
+[tool.uv]
+python = "3.10"
