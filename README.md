@@ -1,4 +1,4 @@
-# 🤖 Chatbot RAG — Recuperación Aumentada por Generación
+# 🤖 RAG Chatbot — Generation Augmented Retrieval
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Enabled-green)](https://streamlit.io/)
@@ -6,65 +6,65 @@
 
 ---
 
-## 🧠 Descripción
+## 🧠 Description
 
-Este proyecto provee un **chatbot interactivo basado en RAG (Retrieval-Augmented Generation)** que permite responder preguntas con contexto extraído de documentos PDF.
+This project provides a **Interactive chatbot based on RAG (Retrieval-Augmented Generation)** which allows you to answer questions with context extracted from PDF documents.
 
-Flujo general:
-1. Procesar y vectorizar el contenido del PDF.  
-2. Consultar el vector store para recuperar fragmentos relevantes.  
-3. Usar un modelo de lenguaje (`gemma:2b`) para generar una respuesta coherente con el contexto.
-
----
-
-## 🏗️ Arquitectura del sistema
-
-PDF --> Preprocesamiento --> Embeddings (Ollama) --> Vector Store (Chroma)
-Usuario --> Recuperación --> Modelo Gemma:2b --> Respuesta contextualizada
+General flow:
+1. Process and vectorize the PDF content.
+2. Query the vector store to retrieve relevant fragments.
+3. Use a language model (`gemma:2b`) to generate a contextually consistent response.
 
 ---
 
-## ✨ Características
+## 🏗️ System architecture
 
-- 📚 Soporte para múltiples archivos PDF.  
-- 💬 Consulta en lenguaje natural con contexto enriquecido.  
-- 🧠 Uso de embeddings de Ollama.  
-- 🤖 Generación con modelo `gemma:2b`.  
-- 🖥️ Interfaz web sencilla con Streamlit.  
-- 🧪 Integración opcional con LangSmith.
+PDF --> Preprocessing --> Embeddings (Ollama) --> Vector Store (Chroma)
+User --> Recovery --> Model Gemma:2b --> Response contextualized
 
 ---
 
-## 🧰 Requisitos
+## ✨ Characteristics
 
-- Python 3.8 o superior  
+- 📚 Support for multiple PDF files.
+- 💬 Natural language query with rich context.
+- 🧠 Using Ollama embeddings.
+- 🤖 Generation with model `gemma:2b`. 
+- 🖥️ Simple web interface with Streamlit.
+- 🧪 Optional integration with LangSmith.
+
+---
+
+## 🧰 Requirements
+
+- Python 3.8 or superior  
 - Git  
-- Entorno virtual (recomendado)
+- Virtual environment (recommended)
 
 ---
 
-## ⚙️ Instalación
+## ⚙️ Installation
 
 ```bash
-# 1. Clonar el repositorio
+# 1. Clone the repository
 git clone https://github.com/seba39399/Chatbot-RAG---Juan-Sebastian-Pena-V.git
 cd Chatbot-RAG---Juan-Sebastian-Pena-V
 
-# 2. Crear entorno virtual
+# 2. Create virtual environment
 python -m venv .venv
 
-# 3. Activar entorno virtual
-# En Windows
+# 3. Activate virtual environment
+# Windows
 .\.venv\Scripts\activate
-# En Linux/macOS
+# Linux/macOS
 source .venv/bin/activate
 
-# 4. Instalar dependencias
+# 4. Install dependencies
 pip install -r requirements.txt
 
-## 🔐 Configuración (opcional)
+## 🔐 Configuration (optional)
 
-Si deseas habilitar trazabilidad con LangSmith:
+If you want to enable traceability with LangSmith:
 
 ```bash
 # Windows
@@ -74,24 +74,24 @@ setx LANGCHAIN_API_KEY "tu_api_key_aqui"
 export LANGCHAIN_API_KEY="tu_api_key_aqui"
 
 ```
-## 💬 Ejemplos de uso
+## 💬 Examples of use
 
-Pregunta: ¿Cuál es el personaje principal?
-Respuesta: El personaje principal es Caperucita Roja.
+Question: Who is the main character?
+Answer: The main character is Little Red Riding Hood.
 
-Pregunta: ¿De qué trata la historia?
-Respuesta: Trata sobre cómo Caperucita Roja aprende a no confiar en desconocidos y seguir indicaciones de su madre.
+Question: What is the story about?
+Answer: It's about how Little Red Riding Hood learns not to trust strangers and to follow her mother's instructions.
 
-Pregunta: ¿Cómo finaliza la historia?
-Respuesta: Termina cuando Caperucita Roja llega a casa de su abuela y se encuentra con un lobo.
+Question: How does the story end?
+Answer: It ends when Little Red Riding Hood arrives at her grandmother's house and encounters a wolf.
 
 ---
 
-## 🤝 Contribuciones y créditos
+## 🤝 Contributions and credits
 
-## 👨‍💻 Desarrollado por Juan Sebastián Peña Valderrama
+## 👨‍💻 Developed by Biomedical Engineer and Artificial Intelligence Specialist: Juan Sebastián Peña Valderrama
 
-## 🚀 Inspirado en paradigmas RAG y herramientas open-source:
+## 🚀 Inspired by RAG paradigms and open-source tools:
 
 -LangChain
 
@@ -101,4 +101,4 @@ Respuesta: Termina cuando Caperucita Roja llega a casa de su abuela y se encuent
 
 -Streamlit
 
-## 🧩 Contribuciones abiertas: issues, sugerencias y PRs son bienvenidos.
+## 🧩 Open contributions: issues, suggestions and PRs are welcome
