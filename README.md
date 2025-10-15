@@ -74,4 +74,31 @@ setx LANGCHAIN_API_KEY "tu_api_key_aqui"
 export LANGCHAIN_API_KEY="tu_api_key_aqui"
 
 ```
-## 
+## 💬 Ejemplos de uso
+
+Pregunta: ¿Cuál es el personaje principal?
+Respuesta: El personaje principal es Caperucita Roja.
+
+Pregunta: ¿De qué trata la historia?
+Respuesta: Trata sobre cómo Caperucita Roja aprende a no confiar en desconocidos y seguir indicaciones de su madre.
+
+Pregunta: ¿Cómo finaliza la historia?
+Respuesta: Termina cuando Caperucita Roja llega a casa de su abuela y se encuentra con un lobo.
+
+---
+
+## 🤝 Contribuciones y créditos
+
+## 👨‍💻 Desarrollado por Juan Sebastián Peña Valderrama
+
+## 🚀 Inspirado en paradigmas RAG y herramientas open-source:
+
+-LangChain
+
+-Ollama
+
+-Chroma
+
+-Streamlit
+
+## 🧩 Contribuciones abiertas: issues, sugerencias y PRs son bienvenidos.
