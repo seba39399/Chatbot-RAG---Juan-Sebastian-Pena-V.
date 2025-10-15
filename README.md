@@ -16,3 +16,8 @@ Flujo general:
 3. Usar un modelo de lenguaje (`gemma:2b`) para generar una respuesta coherente con el contexto.
 
 ---
+
+## 🏗️ Arquitectura del sistema
+
+PDF --> Preprocesamiento --> Embeddings (Ollama) --> Vector Store (Chroma)
+Usuario --> Recuperación --> Modelo Gemma:2b --> Respuesta contextualizada
