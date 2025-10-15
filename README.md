@@ -8,12 +8,14 @@
 
 ## 🧠 Description
 
-This project provides a **Interactive chatbot based on RAG (Retrieval-Augmented Generation)** which allows you to answer questions with context extracted from PDF documents.
+This project provides a **Interactive chatbot based on RAG (Retrieval-Augmented Generation)**, designed to enhance question-answering tasks by retrieving and leveraging information from uploaded PDF documents.
+
+Unlike traditional chatbots that rely solely on pre-trained language models, this approach combines retrieval and generation, enabling the model to produce more accurate, contextualized, and reliable responses based on real source material.
 
 General flow:
-1. Process and vectorize the PDF content.
-2. Query the vector store to retrieve relevant fragments.
-3. Use a language model (`gemma:2b`) to generate a contextually consistent response.
+1. Process and vectorize the PDF content. The PDF content is processed and transformed into embeddings using advanced language models, converting textual information into a numerical representation that captures semantic meaning.
+2. Query the vector store to retrieve relevant fragments. When a user submits a query, the system searches the vector store to identify and retrieve the most relevant text fragments from the document.
+3. Answer Generation. The retrieved fragments are passed to a language model (gemma:2b), which uses this contextual information to generate a coherent and well-informed response.
 
 ---
 
