@@ -61,3 +61,17 @@ source .venv/bin/activate
 
 # 4. Instalar dependencias
 pip install -r requirements.txt
+
+## 🔐 Configuración (opcional)
+
+Si deseas habilitar trazabilidad con LangSmith:
+
+```bash
+# Windows
+setx LANGCHAIN_API_KEY "tu_api_key_aqui"
+
+# Linux/macOS
+export LANGCHAIN_API_KEY="tu_api_key_aqui"
+
+```
+## 
